@@ -6,8 +6,6 @@ module Crystal::Healthy
     include Router
 
     def draw_routes
-      redisapp = RedisApp::Actions.new
-
       get "/health" do |context, params|
         context.response.print "4Cyl750!"
         context
