@@ -1,18 +1,25 @@
 # crystal-healthy
 
-TODO: Write a description here
-
-## Installation
-
-TODO: Write installation instructions here
+A tiny (11mb) container with a binary, returning 200 ok to `/health` on a given `PORT` (defaults to `8000`)
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+# Run with defaults
+docker run -p 1234:8000 omerxx/crystal-healthy
 
-## Development
+# Test
+curl 127.0.0.1:1234/health
+```
+OR
 
-TODO: Write development instructions here
+```
+# Run with a given PORT
+docker run -p 1234:3333 -e PORT=3333 omerxx/crystal-healthy
+
+# Test
+curl 127.0.0.1:1234/health
+```
 
 ## Contributing
 
@@ -24,4 +31,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) omerxx - creator, maintainer
+- [omerxx](https://github.com/omerxx) omerxx - creator, maintainer
