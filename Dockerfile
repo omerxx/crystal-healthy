@@ -2,9 +2,9 @@ FROM bash
 
 WORKDIR /app
 
-# ARG TESTVAR
+ARG TESTVAR
 
-ENV SECVAR=$TESTVAR
+# ENV SECVAR=$TESTVAR
 
 # COPY run.sh /app
 
