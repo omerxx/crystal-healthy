@@ -1,0 +1,6 @@
+pipeline:
+  test:
+    image: dronesecrets
+    testvar: $${TESTVAR}
+    secrets: 
+      - testvar
