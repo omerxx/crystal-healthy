@@ -1,6 +1,7 @@
 pipeline:
   test:
     image: omerxx/dronesecrets
+    pull: true
     testvar: $${TESTVAR}
     secrets: 
       - testvar
