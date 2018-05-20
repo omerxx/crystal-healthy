@@ -2,6 +2,8 @@ FROM bash
 
 WORKDIR /app
 
+ARG TESTVAR
+
 ENV SECVAR=$TESTVAR
 
 # COPY run.sh /app

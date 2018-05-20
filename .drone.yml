@@ -8,6 +8,8 @@ pipeline:
     image: plugins/docker
     repo: omerxx/dronesecrets
     tags: build
+    build_args_from_env:
+      - testvar
     secrets:
       - testvar
       - docker_username
