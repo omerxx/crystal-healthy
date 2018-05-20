@@ -1,7 +1,13 @@
 pipeline:
-  test:
-    image: omerxx/dronesecrets
-    pull: true
-    testvar: "$${TESTVAR}"
-    secrets: 
+  # test:
+  #   image: omerxx/dronesecrets
+  #   pull: true
+  #   secrets: 
+  #     - testvar
+  docker:
+    image: plugins/docker
+    repo: omerxx/dronesecrets
+    tags: build
+    secrets:
       - testvar
+
